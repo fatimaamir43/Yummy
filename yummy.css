@@ -4,6 +4,20 @@
 
 }
 
+.navbar-nav .nav-link {
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: red;
+    border-bottom: 2px solid red;
+}
+
+.navbar-nav .dropdown-menu .dropdown-item:hover {
+    color: red;
+}
+
+
 
 /*........ hero section css........  */
 

@@ -43,12 +43,12 @@
             </button>
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav mx-auto ">
-                    <li class="nav-item"><a class="nav-link fs-5 pe-4" href="#">Home </a></li>
-                    <li class="nav-item"><a class="nav-link fs-5 pe-4" href="#">About</a></li>
-                    <li class="nav-item"><a class="nav-link fs-5 pe-4" href="#">Menu</a></li>
-                    <li class="nav-item"><a class="nav-link fs-5 pe-4" href="#">Events</a></li>
-                    <li class="nav-item"><a class="nav-link fs-5 pe-4" href="#">Chefs</a></li>
-                    <li class="nav-item"><a class="nav-link fs-5 pe-4" href="#">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link fs-5 pe-4" href="#hero-section">Home </a></li>
+                    <li class="nav-item"><a class="nav-link fs-5 pe-4" href="#about-section">About</a></li>
+                    <li class="nav-item"><a class="nav-link fs-5 pe-4" href="#menu-section">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link fs-5 pe-4" href="#event-section">Events</a></li>
+                    <li class="nav-item"><a class="nav-link fs-5 pe-4" href="#chef-section">Chefs</a></li>
+                    <li class="nav-item"><a class="nav-link fs-5 pe-4" href="#gallery-section">Gallery</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link fs-5 pe-4 dropdown-toggle" href="#" role="button"
                             data-bs-toggle="dropdown">Dropdown</a>
@@ -58,13 +58,14 @@
                             <li><a class="dropdown-item" href="#">Dropdown3</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a class="nav-link fs-5 pe-5" href="#">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link fs-5 pe-5" href="#contact-section">Contact</a></li>
                     <button class="btn btn-danger  rounded-5 ms-5 px-4">Book a Table</button>
                 </ul>
 
             </div>
         </div>
     </nav>
+
 
 
     <!-- Sidebar menu -->
@@ -152,7 +153,7 @@
 
     <!------------- learn more about us -------------->
 
-    <div class="container-fluid mb-4">
+    <div class="container-fluid mb-4 about-section" id="about-section"> 
         <div class="row justify-content-center   m-5">
             <div class="col-md-8 text-center aos-init" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="100">
 
@@ -164,12 +165,7 @@
         <div class="row justify-content-center aos-init " style="column-gap: 25px; row-gap: 9px; ">
             <div class="col-md-6  text-center" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="100">
                 <img class="img-fluid" src="yummy1.jpg" alt="img not found" style="width: 100%; height: 100%;">
-                <button style="position: absolute; z-index: 1; left:200px; top: 500px;"
-                    class="btn bg-white rounded-0 px-5 d-none d-sm-inline">
-                    <p class="text-dark fs-4 fw-bold">Book a Table <br><span class="text-danger">+1 5589 55488 55</span>
-                    </p>
-                </button>
-
+               
 
 
             </div>
@@ -299,37 +295,35 @@
 
     <!---------- section 4 start --------------->
     <!---------- counter section -------->
+   
     <section class="section-4">
         <div class="container-fluid"
             style="background-image: linear-gradient(rgba(0, 0, 0, 0.550),rgba(0, 0, 0, 0.550)),url(counterimg.jpg);">
             <div class="row justify-content-center">
                 <div class="col-md-10">
-                    <div class="row justify-content-evenly py-5 ">
-                        <div class="col-md-3 py-5 text-center ">
-                            <p class="display-4 text-white fw-bold">232</p>
+                    <div class="row justify-content-evenly py-5">
+                        <div class="col-md-3 py-5 text-center">
+                            <p class="display-4 text-white fw-bold counter" data-target="232">0</p>
                             <p class="text-white fw-bold">Clients</p>
                         </div>
-                        <div class="col-md-3 text-center py-5 ">
-                            <p class="display-4 text-white fw-bold">521</p>
+                        <div class="col-md-3 text-center py-5">
+                            <p class="display-4 text-white fw-bold counter" data-target="521">0</p>
                             <p class="text-white fw-bold">Projects</p>
-
                         </div>
                         <div class="col-md-3 text-center py-5">
-                            <p class="display-4 text-white fw-bold">1453</p>
+                            <p class="display-4 text-white fw-bold counter" data-target="1453">0</p>
                             <p class="text-white fw-bold">Hours of Support</p>
-
                         </div>
                         <div class="col-md-3 text-center py-5">
-                            <p class="display-4 text-white fw-bold">32</p>
+                            <p class="display-4 text-white fw-bold counter" data-target="32">0</p>
                             <p class="text-white fw-bold">Workers</p>
-
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
+    
 
     <!------------- section 4 end ---------------->
 
@@ -338,7 +332,7 @@
     <!-------- menu section  ----->
 
 
-    <div class="container-fluid bg-white p-5">
+    <div class="container-fluid bg-white p-5 emnu-section" id="menu-section">
         <div class="row justify-content-center aos-init " data-aos="fade-up" data-aos-duration="2000"
             data-aos-delay="80">
             <div class="col-md-11 text-center">
@@ -378,7 +372,7 @@
 
     <div class="container-fluid bg-white">
         <div class="row justify-content-center">
-            <div class="col-md-11">
+            <div class="col-md-11 text-center">
                 <div class="row justify-content-evenly border-secondary aos-init" data-aos="fade-up"
                     data-aos-duration="2000" data-aos-delay="80" style="row-gap: 12px;">
                     <div class="col-md-3">
@@ -544,7 +538,7 @@
 
     <!--------------- section 7 start  ------------------->
 
-    <section class="section-7  aos-init" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+    <section class="section-7 event-section aos-init" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" id="event-section">
         <div class="swiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide"
@@ -602,7 +596,7 @@
 
 
 
-    <div class="container-fluid bg-light ">
+    <div class="container-fluid bg-light chef-section" id="chef-section">
         <div class="row justify-content-center">
             <div class="col-md-10 text-center pt-4 pb-5">
                 <div class="aos-init" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="100">
@@ -719,7 +713,7 @@
     <!----------- section 10 start  ------------->
 
 
-    <div class="section-10 py-5">
+    <div class="section-10 py-5 gallery-section" id="gallery-section">
         <div class="container section-title text-center aos-init" data-aos="fade-up" data-aos-duration="1000"
             data-aos-delay="200">
             <h2>GALLERY</h2>
@@ -806,7 +800,7 @@
 
 
     </div>
-    <section class="section-11">
+    <section class="section-11 contact-section" id="contact-section">
         <div class="container-fluid">
             <div class="row justify-content-center ">
                 <div class="col-md-10  ">

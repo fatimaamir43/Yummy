@@ -77,3 +77,45 @@ var swiper = new Swiper('.section-10 .swiper', {
 
 
 //----------------- section 10 js end ---------------
+
+// -------------counter section js start------------
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const counters = document.querySelectorAll('.counter');
+        const speed = 200; // Adjust speed as needed
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const counter = entry.target;
+                    if (!counter.classList.contains('animating')) {
+                        counter.classList.add('animating');
+                        const target = +counter.getAttribute('data-target');
+                        const updateCount = () => {
+                            const count = +counter.innerText;
+                            const increment = target / speed;
+
+                            if (count < target) {
+                                counter.innerText = Math.ceil(count + increment);
+                                setTimeout(updateCount, 1);
+                            } else {
+                                counter.innerText = target;
+                                counter.classList.remove('animating');
+                                observer.unobserve(counter);
+                                // Re-observe the counter after a short delay to allow for infinite animation
+                                setTimeout(() => observer.observe(counter), 100);
+                            }
+                        };
+                        updateCount();
+                    }
+                }
+            });
+        }, {
+            threshold: 0.1 // Adjust as needed
+        });
+
+        counters.forEach(counter => {
+            observer.observe(counter);
+        });
+    });
+

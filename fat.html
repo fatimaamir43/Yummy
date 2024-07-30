@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/bootstrap.css">
+</head>
+<body>
+     <!-- navbar -->
+
+     <nav class="navbar navbar-expand-xl  p-4 bg-white">
+        <div class="container-fluid ">
+            <a class="navbar-brand ps-5 fw-bold text-dark fs-4" href="#">Yummy.</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav mx-auto ">
+                    <li class="nav-item"><a class="nav-link fs-5 pe-4" href="#">Home </a></li>
+                    <li class="nav-item"><a class="nav-link fs-5 pe-4" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link fs-5 pe-4" href="#">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link fs-5 pe-4" href="#">Events</a></li>
+                    <li class="nav-item"><a class="nav-link fs-5 pe-4" href="#">Chefs</a></li>
+                    <li class="nav-item"><a class="nav-link fs-5 pe-4" href="#">Gallery</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link fs-5 pe-4 dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown">Dropdown</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Dropdown1</a></li>
+                            <li><a class="dropdown-item" href="#">Dropdown2</a></li>
+                            <li><a class="dropdown-item" href="#">Dropdown3</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link fs-5 pe-5" href="#">Contact</a></li>
+                    <button class="btn btn-danger  rounded-5 ms-5 px-4">Book a Table</button>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Sidebar menu -->
+
+
+    <div class="offcanvas offcanvas-start offcanvas-xl " id="navbarNav">
+        <div class="offcanvas-header">
+            <h1>Yummy.</h1>
+            <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+
+        </div>
+
+        <div class="offcanvas-body  text-bg-danger ps-3">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled">Chefs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled">Contact</a>
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+</body>
+</html>

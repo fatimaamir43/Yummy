@@ -1,0 +1,223 @@
+
+.hero{
+    font-family: "Amatic SC", sans-serif;
+
+}
+
+
+/*........ hero section css........  */
+
+
+.animated-image {
+    animation: moveUpDown 3s ease-in-out infinite;
+}
+
+@keyframes moveUpDown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/* .........hero section end........  */
+
+
+
+/* --------section 3 CSS -------- */
+#book-table-btn {
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+#book-table-btn:hover {
+    box-shadow: 0 0 10px rgba(220, 53, 69, 0.5); /* Shadow color matching Bootstrap's danger color */
+}
+
+.btn-custom {
+    background-color: rgb(238, 94, 118);
+    color: white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color:white;
+    color: red; /* Ensure text color is white on hover */
+}
+
+
+/*----------- section 3 CSS end ----------- */
+
+
+/* ----------------section 6 css start -----------  */
+
+.section-6 .swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.section-6 .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: transform 0.5s ease; /* Ensure smooth transition for transform */
+}
+
+.section-6 .swiper-slide-active {
+    transform: scale(1.05);
+    transition: transform 0.5s ease;
+}
+
+/* Additional styling for your section */
+.section-6 {
+    padding: 40px 0;
+}
+
+.section-6 .swiper-pagination-bullet {
+    background-color: rgb(161, 157, 157);
+    padding: 0.4rem;
+    margin-top: 2rem;
+}
+
+.section-6 .swiper-pagination-bullet-active {
+    background-color: rgb(206, 18, 18);
+}
+
+
+/*------ section 6 css end ----- */
+
+.btn-custom1 {
+    background-color: rgba(255, 192, 203, 0.548);
+    color: red;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect */
+.card:hover .btn-custom1 {
+    background-color: red;
+    color: white;
+}
+
+/*---------- section 8 css start--------- */
+ /* card section */
+
+  .card1 {
+    transition: transform 0.4s ease-in-out;
+}
+
+ .card1:hover {
+    transform: scale(1.06);
+}
+/*------- section 8 css end ------ */
+
+/*----------- section 7 CSS start ---------- */
+
+/* swipper */
+
+.section-7 .swiper {
+    padding-bottom: 50px; /* Add padding to the bottom to make space for pagination */
+    padding-top: 50px;
+}
+.section-7 .swiper-slide {
+    display: flex;
+    align-items: end;
+    background-color: black;
+    z-index: -1;
+    
+}
+.section-7 .swiper-slide .content h3{
+    font-size: 24px;
+    font-weight:700;
+    margin-bottom: 5px;
+    font-family: "Amatic SC", sans-serif;
+
+}
+.section-7 .swiper-slide .content h2{
+    border-bottom: 2px solid rgb(206, 18, 18);
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+.section-7 .swiper-slide-active {
+    transform: scale(1);
+    transition: transform 0.3s;
+}
+.section-7 .swiper-pagination-bullet {
+    background-color:rgb(161, 157, 157);
+    padding: 0.4rem;
+    margin-top: 2rem;
+}
+.section-7 .swiper-pagination-bullet-active {
+    background-color:rgb(206, 18, 18);
+}
+ /*---------- section 7 CSS end ------------- */
+
+ /*----------- section 10 css start -------------- */
+   /* General styles */
+   .section-10{
+    background-color: rgb(242,242,242);
+}
+.section-10 .section-title h2 {
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+    color: #212529;
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";;
+}
+.section-10 .section-title p {
+    color:#37373f;;
+    margin: 10px 0 0 0;
+    font-size: 48px;
+    font-weight: 500;
+    font-family: "Amatic SC", sans-serif;
+}
+.section-10 .section-title p span{
+    color: rgb(206, 18, 18);
+
+}
+
+.section-10  .swiper {
+    padding-bottom: 50px; /* Add padding to the bottom to make space for pagination */
+    padding-top: 50px;
+}
+.section-10  .swiper-slide-active {
+    transform: scale(1);
+    transition: transform 0.3s;
+}
+.section-10 .swiper-pagination-bullet {
+    background-color:rgb(161, 157, 157);
+    padding: 0.4rem;
+}
+.section-10 .swiper-pagination-bullet-active {
+    background-color:rgb(206, 18, 18);
+}
+@media (min-width: 1200px) {
+    .section-10 .swiper-slide-active {
+        transform: scale(1);
+        border: 8px solid rgb(206, 18, 18);
+    }
+    .section-10 .swiper-slide img{
+        padding: 0.2rem;
+    }
+}
+@media (min-width: 768px) {
+    .section-10 .swiper-slide-active {
+        transform: scale(1);
+        border: 5px solid rgb(206, 18, 18);
+    }
+    .section-10 .swiper-slide img{
+        padding: 0.4rem;
+    }
+}
+
+
+ /* -------------------section 10 css end -------------------- */
+
+ 
